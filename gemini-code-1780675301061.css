@@ -1,0 +1,263 @@
+/* Configurações Gerais e Resets */
+:root {
+    --primary-color: #2e7d32;
+    --primary-light: #4caf50;
+    --dark-color: #1b5e20;
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --bg-light: #f4f9f4;
+    --card-bg: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+/* Variáveis para o Modo Escuro */
+[data-theme="dark"] {
+    --text-color: #e0e0e0;
+    --bg-color: #121212;
+    --bg-light: #1e1e1e;
+    --card-bg: #2d2d2d;
+    --primary-color: #81c784;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: var(--transition);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: var(--transition);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.btn-dark-mode {
+    background: none;
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botões */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+}
+
+/* Layouts em Grid */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+/* Cards e Destaques */
+.card-highlight {
+    background-color: var(--primary-light);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Formulário de Contato */
+.form-container {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+/* Classes utilitárias do JS */
+.hidden {
+    display: none;
+}
+
+#form-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsividade Básica para Celular */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav-links {
+        padding: 0;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}

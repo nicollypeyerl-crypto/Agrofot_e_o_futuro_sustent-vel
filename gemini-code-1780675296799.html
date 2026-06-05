@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrofot - Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">Agro<span>fot</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#equilibrio">Equilíbrio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn-dark-mode" id="theme-toggle">🌓 Modo Escuro</button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>O Futuro Sustentável da Agricultura</h1>
+            <p>Encontrando o equilíbrio perfeito entre a produção em alta escala e a preservação do meio ambiente.</p>
+            <a href="#sobre" class="btn-primary">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2>O que é o Agrofot?</h2>
+                    <p>O Agrofot é um conceito inovador que une tecnologia avançada, monitoramento fotográfico/satélite e práticas agrícolas regenerativas. Nosso objetivo é transformar a forma como o campo produz, garantindo alimentos de qualidade sem esgotar os recursos naturais do nosso planeta.</p>
+                </div>
+                <div class="card-highlight">
+                    <h3>Nossa Missão</h3>
+                    <p>Implementar soluções inteligentes que reduzam o impacto ambiental da agricultura tradicional, promovendo a biodiversidade e a neutralidade de carbono.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equilibrio" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="text-center">Os Pilares do Equilíbrio</h2>
+            <p class="text-center subtitle">Como unimos produtividade e conservação ambiental.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h4>Gestão de Recursos</h4>
+                    <p>Otimização do uso da água e solo através de sensores e dados precisos, evitando o desperdício.</p>
+                </div>
+                <div class="card">
+                    <h4>Biodiversidade</h4>
+                    <p>Integração de áreas nativas com lavouras produtivas, criando corredores ecológicos para a fauna.</p>
+                </div>
+                <div class="card">
+                    <h4>Tecnologia Verde</h4>
+                    <p>Uso de energias renováveis e maquinário de baixa emissão de poluentes no campo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding">
+        <div class="container form-container">
+            <h2 class="text-center">Junte-se à Revolução Verde</h2>
+            <p class="text-center">Quer saber como aplicar o Agrofot na sua região? Entre em contato conosco.</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required placeholder="Seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="seu.email@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" rows="4" required placeholder="Como podemos te ajudar?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+            <div id="form-message" class="hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Agrofot. Todos os direitos reservados. Equilíbrio entre Produção e Meio Ambiente.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
